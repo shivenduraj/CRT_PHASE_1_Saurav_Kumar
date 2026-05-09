@@ -4,8 +4,11 @@ using namespace std;
 
 class Car{
     private:
-    const int speed = 120;
+    int speed = 120; //int speed;
     public:
+    Car() {
+        speed = 120;
+    }
     void show() const{
         // speed = 150; // This would cause a compilation error
         cout << speed << endl;
